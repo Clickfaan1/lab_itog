@@ -1,10 +1,10 @@
 /*
 Цветовая палитра, которую буду исползовать
-    #654321 - темно-коричневый
-    #c7b446 - лимонно-желтый
-    #98ff98 - зеленой-мяты 
-    #cc338b - пурпурно-розовый
-    #ccff00 - цвет лайма
+    #AD465F - бурый
+    #D05053 - красный
+    #319647 - зеленый
+    #56C4CB - синий
+    #D0AC50 - желтый
     #000000 - черный цвет 
     #ffffff - белый цвет
 */
@@ -22,8 +22,8 @@ p, .modal{
 }
 
 header{
-    /*background-color: #98ff98;*/
-    background-color: #c7b446;
+    /*background-color: #319647;*/
+    background-color: #D05053;
 }
 
 #routes, #guide{
@@ -31,29 +31,29 @@ header{
 }
 
 .btn-primary{
-    background-color: #654321!important;
-    border-color: #654321!important;
+    background-color: #AD465F!important;
+    border-color: #AD465F!important;
 }
 
 .btn-secondary{
-    background-color: #c7b446!important;
-    border-color: #c7b446!important;
+    background-color: #D05053!important;
+    border-color: #D05053!important;
 }
 .btn-success{
-    background-color:  #98ff98!important;
-    border-color:  #98ff98!important;
+    background-color:  #319647!important;
+    border-color:  #319647!important;
 }
 .btn-warning{
-    background-color: #ccff00!important;
-    border-color: #ccff00!important;
+    background-color: #D0AC50!important;
+    border-color: #D0AC50!important;
 }
 .btn-info{
-    background-color: #cc338b!important;
-    border-color: #cc338b!important;
+    background-color: #56C4CB!important;
+    border-color: #56C4CB!important;
 }
 
 main > .container-fluid{
-    /*background-color: #c7b446;*/
+    /*background-color: #D05053;*/
     background-color: #000000;
     color: #ffffff;
 }
@@ -65,7 +65,7 @@ tr{
     color: white!important;
 }
 footer{
-    background-color: #c7b446;
+    background-color: #D05053;
 }
 .imgwdt{
     width: 50px;

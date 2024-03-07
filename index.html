@@ -96,7 +96,7 @@
       <div id="routes" class="container-fluid pt-5">
           <div class = "mx-auto" style="width: 85%;">
             <p class="h3 fw-bold">Доступные маршруты</p> 
-            <form class="pb-3" onsubmit="searchRoutes();">
+            <form class="pb-3" id="routes-form">
               <div class="d-flex justify-content-between pt-3">
                 <div class="col me-3">
                   <label for="routeNameInput" class="form-label">Название маршрута</label>
@@ -106,9 +106,6 @@
                     <label for="mainObjectSelect" class="form-label">Выберите объект</label>
                     <select class="form-control" id="mainObjectSelect">
                       <option value="" disabled selected>Выберите основную достопримечательность</option>
-                      <option value="MainObject1">MainObject1</option>
-                      <option value="MainObject2">MainObject2</option>
-                      <option value="MainObject3">MainObject3</option>
                     </select>
                 </div>
                 <div class="me-3 d-flex align-items-end">

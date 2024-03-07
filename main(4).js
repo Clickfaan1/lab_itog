@@ -196,6 +196,20 @@ function createselect(languages) {
     }  
 }
 
+function getObjects(routes) {
+    const select = document.getElementById('mainObjectSelect');
+    for (const route of routes) {
+        const symbols = /[,-]/;
+        var placesArray = route["mainObject"].split(symbols);
+        for (const place of placesArray) {
+            const option = document.createElement('option');
+            option.value = place;
+            option.innerHTML = place;
+            select.appendChild(option);
+        }
+    }
+}
+
 //загружаем таблицу со всеми гидами
 function guideDownload(route) {
     let guideTable = document.querySelector('#guideTable');
@@ -290,6 +304,7 @@ function updateTable() {
   
     clearRoutesTable();
     addRoutesToTable(currentRoutes);
+    getObjects(currentRoutes);
     updatePagination();
     
     const searchKeyword = document.getElementById('routeNameInput')
@@ -486,6 +501,11 @@ function clickHandler(event) {
 
 
 window.onload = function() {
+    const orderForm = document.getElementById("routes-form");
+    orderForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        searchRoutes();
+    });
     dateField.addEventListener('change', calculateOrderCost);
     timeField.addEventListener('change', calculateOrderCost); 
     durationField.addEventListener('change', calculateOrderCost);
