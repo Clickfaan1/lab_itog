@@ -1,0 +1,72 @@
+/*
+Цветовая палитра, которую буду исползовать
+    #654321 - темно-коричневый
+    #c7b446 - лимонно-желтый
+    #98ff98 - зеленой-мяты 
+    #cc338b - пурпурно-розовый
+    #ccff00 - цвет лайма
+    #000000 - черный цвет 
+    #ffffff - белый цвет
+*/
+p, .modal{
+    font-family: 'Mont','Montseыrrat',  sans-serif;
+    font-size: medium;
+}
+.text-justify {
+    text-align: justify;
+}
+.navbar{
+    font-family: 'Mont','Montseыrrat',  sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+header{
+    /*background-color: #98ff98;*/
+    background-color: #c7b446;
+}
+
+#routes, #guide{
+    background-color: #302f2f;
+}
+
+.btn-primary{
+    background-color: #654321!important;
+    border-color: #654321!important;
+}
+
+.btn-secondary{
+    background-color: #c7b446!important;
+    border-color: #c7b446!important;
+}
+.btn-success{
+    background-color:  #98ff98!important;
+    border-color:  #98ff98!important;
+}
+.btn-warning{
+    background-color: #ccff00!important;
+    border-color: #ccff00!important;
+}
+.btn-info{
+    background-color: #cc338b!important;
+    border-color: #cc338b!important;
+}
+
+main > .container-fluid{
+    /*background-color: #c7b446;*/
+    background-color: #000000;
+    color: #ffffff;
+}
+.table{
+    color: white!important;
+    font-family: 'Mont','Montseыrrat',  sans-serif;
+}
+tr{
+    color: white!important;
+}
+footer{
+    background-color: #c7b446;
+}
+.imgwdt{
+    width: 50px;
+}
