@@ -95,10 +95,9 @@ function calculateCost(guideCost, duration,
     let price = guideCost * duration * isThisDayOff(date);
     price += personsNumber > 5 && personsNumber <= 10 ? 1000 : 0;
     price += personsNumber > 10 && personsNumber <= 20 ? 1500 : 0;
-    price += extra ? personsNumber * 1000 : 0;
-    price *= students && personsNumber > 1 && personsNumber <= 5 ? 1.15 : 1;
+    price *= students && personsNumber > 0 && personsNumber <= 5 ? 1.15 : 1;
     price *= students && personsNumber > 5 && personsNumber <= 10 ? 1.25 : 1;
-
+    price *= extra ? 0.75 : 1;
 
     return Math.floor(price);
 }
